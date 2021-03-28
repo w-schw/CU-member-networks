@@ -15,7 +15,7 @@ columns = ['Center', 'Nodes', 'Individuals', 'Memberships', 'Total Savings', 'To
            'PPM', 'Dividends Paid', 'Interest Received']
 timestamp = datetime.now().date().strftime("%b %d %Y ")
 
-for i in range(8):
+for i in range(len(multi)):
         #specify subgraph
     graph = multi[i]
     colors = generate_color_map(graph,ind)
