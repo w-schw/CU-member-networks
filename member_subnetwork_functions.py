@@ -29,10 +29,13 @@ def generate_member_graph(db_type):
         edges= pd.read_sql(sql_queries.sqlite_edge_query, conn)
 
     elif db_type == 'datamart':
-        conn = pyodbc.connect('Driver={SQL Server};'
-                      'Server='+str(MSSQL_server_name)+';'
-                      'Database='+str(datamart_name)+';'
-                      'Trusted_Connection=yes;')
+        try:
+            conn = pyodbc.connect('Driver={SQL Server};'
+                          'Server='+str(MSSQL_server_name)+';'
+                          'Database='+str(datamart_name)+';'
+                          'Trusted_Connection=yes;', timeout=3)
+        except:
+            raise ValueError("Unable to connect to datamart")
 
         ind = pd.read_sql(sql_queries.ms_sql_node_individual_query, conn)
         mem = pd.read_sql(sql_queries.ms_sql_member_individual_query, conn)
