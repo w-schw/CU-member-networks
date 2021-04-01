@@ -62,6 +62,10 @@ for i in range(len(multi)):
 
     subnetwork_df.append(export_list)
 
+    # close the plot to save memory
+    plt.close(fig1)
+    plt.close(fig2)
+
 print('Graphics saved to current directory.')
 print('Generating spreadsheet...')
 
