@@ -28,7 +28,7 @@ output_location = 'output'
 gephx_filename = 'Total membership graph '
 
 # excel file with summary details
-summary_xls_filename = 'Member subnetworks '
+summary_xls_filename = 'Member subgraphs '
 
 # csvs with member_nbr/ individual_id and the subgraph they belong to
 member_group_csv_filename = 'individual group '
