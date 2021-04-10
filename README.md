@@ -76,7 +76,7 @@ All membership data saved in a .gephx file (not filtered by minimum network size
  
 #### PDFs
 
-For each connected component (subgraph) of the total membership meeting your minimum size, a pdf is generated which contains a visualization and attribute summary table. This can be combined with the summary excel file for sharing and exploration
+For each connected component (subgraph) of the total membership meeting your minimum size, a pdf is generated which contains a visualization and attribute summary table. This can be combined with the summary excel file for sharing and exploration.
 
 <img src="./docs/screenshots/Pdf screenshot.PNG">  
 
@@ -91,5 +91,5 @@ Gephi: https://gephi.org/
 Cytoscape: https://cytoscape.org/  
 NetworkX: https://networkx.org/  
 Gephi tutorials: https://gephi.org/users/  
-If you have problems with Java after Gephi installation: [click here](https://raw.githubusercontent.com/w-schw/XP2-member-networks/main/docs/instructions%20for%20java%20troubleshooting%20in%20gephi.txt)
+If you have problems with Java after Gephi installation: [click here for troubleshooting](https://raw.githubusercontent.com/w-schw/XP2-member-networks/main/docs/instructions%20for%20java%20troubleshooting%20in%20gephi.txt)
 
