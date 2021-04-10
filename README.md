@@ -57,7 +57,7 @@ App.py is the entry point. Before running, activate the virtual environment if n
 
 Both the CLI and GUI should be pretty self explanatory. Keep an eye on the terminal when running the GUI- this is where status messages and errors will be displayed.  
 
-<img src="./docs/screenshots/Gui screenshot.PNG">  
+<img src="./docs/screenshots/Gui screenshot2.PNG">  
 
 ## Managing the output files (important!)  
 The user is responsible for archiving and organizing the output. By default, the program will *not* delete any files in the output folder from the last time it was run, but *will* overwrite any old files with the same name. This will primarily affect the PDFs unless it is run multiple times within the same day, in which case the tables and gephx files will also be overwritten. The easiest way to archive/retain the output is to cut/paste the entire folder somewhere else, or simply rename it. When the program runs it will re-create the output folder if it doesn't exist, so there is no risk to deleting or renaming it.  
