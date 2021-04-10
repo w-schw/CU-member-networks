@@ -84,5 +84,5 @@ Gephi: https://gephi.org/
 Cytoscape: https://cytoscape.org/  
 NetworkX: https://networkx.org/  
 Gephi tutorials: https://gephi.org/users/  
-What to do if you have problems with Java after Gephi installation: [docs/instructions for java troubleshooting in gephi.txt]
+If you have problems with Java after Gephi installation: [click here](./docs/instructions%for%java%troubleshooting%in%gephi.txt)
 
