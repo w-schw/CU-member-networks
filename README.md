@@ -32,7 +32,7 @@ Navigate to ./XP2-member-networks and run `pip install -r requirements.txt`
 Clone this repository using git, or download via the web and unzip (Click the green Code button > click "Download Zip").  
 Before running, activate the virtual environment if necessary.
 
-#### 3. Setting up the SQL server connection  
+#### 3. Set up the SQL server connection  
 Before running, the name of your MSSQL server and datamart are required to connect. Windows authentication is the method for authentication (the only method supported at this time).  
 
 Server details must be saved in the server_details.py file, located in XP2-member-networks/config. Open this file in a text editor of your choice, and replace the 'xxxx' in the code with relevant names. For example, if your sever is called "cool-server" and your database is "cool-datamart", the server_details.py should contain:
