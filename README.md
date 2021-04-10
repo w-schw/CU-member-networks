@@ -5,7 +5,7 @@ Visualize networks of individuals and memberships on the XP2 core/ Data Explorer
 
 Many-to-many relationships between individuals (people) and memberships (accounts) complicate the understanding of how credit union members are connected and related. For example, one individual can participate in multiple memberships, and a membership can have multiple individuals associated with it (primary/joint/beneficiary, etc). 
 
-This script automates the discovery and visualization of these relationships. It outputs visualizations of groups meeting an optional minimum threshold of nodes (members and individuals) and returns summary statistics of those member/individual networks.
+This script automates the discovery and visualization of these relationships. It outputs visualizations of groups meeting an optional minimum threshold of nodes (members and individuals) and returns summary statistics of those member/individual networks.  
 
 <img src="./docs/screenshots/Example member network.PNG">
 <img src="./docs/screenshots/Gephi example 2.PNG">
@@ -50,6 +50,8 @@ datamart_name = 'cool-datamart'
 By default, when the script runs it will output results to xp2-member-networks/output. If you wish to change the location of the output, you can specify a new filepath in config/output_location.py. It should accept relative paths or absolute paths. 
 
 ## Running the program  
+**NOTE**: If you prefer to explore in a jupyter notebook, see Member network development.ipynb in the docs folder. This should run without the need to load any of the other modules included as long as the dummy sqlite database is available.
+
 App.py is the entry point. Before running, activate the virtual environment if necessary. Using terminal or the Anaconda prompt, navigate to ./XP2-member-networks and run `app.py` to run the program with a GUI. To enter the CLI instead, run `app.py cli`.  
 
 Both the CLI and GUI should be pretty self explanatory. Keep an eye on the terminal when running the GUI- this is where status messages and errors will be displayed.  
@@ -80,6 +82,7 @@ If you don't wish to retain any historical output files, it is recommended to de
 ## Resources  
 Gephi: https://gephi.org/  
 Cytoscape: https://cytoscape.org/  
-NetworkX: https://networkx.org/
-Gephi tutorials: https://gephi.org/users/
+NetworkX: https://networkx.org/  
+Gephi tutorials: https://gephi.org/users/  
+What to do if you have problems with Java after Gephi installation: [docs/instructions for java troubleshooting in gephi.txt]
 
