@@ -9,7 +9,6 @@ Many-to-many relationships between individuals (people) and memberships (account
 This script automates the discovery and visualization of these relationships. It outputs visualizations of groups meeting an optional minimum threshold of nodes (members and individuals) and returns summary statistics of those member/individual networks.  
 
 <img src="./docs/screenshots/Example member network.PNG">
-<img src="./docs/screenshots/Gephi example 2.PNG">
 
 ## Setup (for an intended audience of non-Python users)
 
@@ -74,6 +73,8 @@ This is a summary of all the networks of members identified within. It contains 
 #### Total membership graph.gephx
 
 All membership data saved in a .gephx file (not filtered by minimum network size). This file can be opened with a network analysis program such as Gephi or Cytoscape. It can also be opened in Python/NetworkX. Use this file for more advanced analysis, interactive exploration, or for archival purposes. See links to Gephi and Cytoscape below.
+
+<img src="./docs/screenshots/Gephi example 2.PNG">
  
 #### PDFs
 
