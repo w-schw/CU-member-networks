@@ -1,6 +1,6 @@
 # cu-member-networks
 
-Visualize networks of individuals and memberships.
+Visualize networks of individuals and memberships on a certain credit union core system and associated data warehouse 
 
 ## Intro
 
