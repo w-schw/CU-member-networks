@@ -14,9 +14,9 @@ If you don't have Python installed already, Anaconda is a good option: https://d
 
 The following packages are required in addition to the base Python installation: matplotlib, networkx, openpyxl, pandas, pyodbc. At the time of writing decorator version 4.4.2 is required due to a bug in version 5.
 
-You have three options for installing: 
+Three options for installing the packages: 
 
-1) **Manually install these via pip or Anaconda** See:  
+1) **Manually install via pip or Anaconda** See:  
 Installing packages via conda cli: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html  
 Managing environments in Anaconda: https://docs.anaconda.com/anaconda/navigator/getting-started/#navigator-managing-environments  
 Installing packages via Anaconda GUI: https://docs.anaconda.com/anaconda/navigator/tutorials/manage-packages/
