@@ -10,7 +10,7 @@ This script automates the discovery and visualization of these relationships. It
 
 ## Setup (for an intended audience of non-Python users)
 
-#### Download Python and install required packages
+#### 1. Download Python and install required packages
 If you don't have Python installed already, Anaconda is a good option: https://docs.anaconda.com/anaconda/install/.  
 
 The following packages are required in addition to the base Python installation: matplotlib, networkx, openpyxl, pandas, pyodbc. At the time of writing decorator version 4.4.2 is required due to a bug in version 5.
@@ -29,11 +29,11 @@ See: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environme
 3) Use the requirements.txt file to install all at once using pip  
 Navigate to ./XP2-member-networks and run `pip install -r requirements.txt`  
 
-#### Clone or download this repository  
+#### 2. Clone or download this repository  
 Clone this repository using git, or download via the web and unzip (Click the green Code button > click "Download Zip").  
 Before running, activate the virtual environment if necessary.
 
-#### Setting up the SQL server connection  
+#### 3. Setting up the SQL server connection  
 Before running, the name of your MSSQL server and datamart are required to connect. Windows authentication is the method for authentication (the only method supported at this time).  
 
 Server details must be saved in the server_details.py file, located in XP2-member-networks/config. Open this file in a text editor of your choice, and replace the 'xxxx' in the code with relevant names. For example, if your sever is called "cool-server" and your database is "cool-datamart", the server_details.py should contain:
@@ -43,7 +43,7 @@ datamart_name = 'cool-datamart'
 ```
 **NOTE:** A dummy sqlite database is included for testing without the need to connect to your datawarehouse. No setup is required to use this dataset unless the location of the sqlite file has been changed. If the location changed, you can set the filepath to the new location in this same file.  Example: `sqlite_location = 'C:\\Users\\Username\\new directory\\demo_data.db'`
 
-#### Optional: changing the output folder location and file prefixes  
+#### 4. Optional: changing the output folder location and file prefixes  
 By default, when the script runs it will output results to xp2-member-networks/output. If you wish to change this, you can specify a new filepath in output_location.py within the config folder. It should accept relative paths or absolute paths but take care to use 
 
 ## Running the program  
