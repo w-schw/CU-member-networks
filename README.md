@@ -5,10 +5,10 @@ Visualize networks of individuals and memberships on the XP2 core/ Data Explorer
 
 Many-to-many relationships between individuals (people) and memberships (accounts) complicate the understanding of how credit union members are connected and related. For example, one individual can participate in multiple memberships, and a membership can have multiple individuals associated with it (primary/joint/beneficiary, etc). 
 
-This script automates the discovery and visualization of these relationships. It outputs visualizations of groups meeting a threshold of nodes and returns summary statistics of that member subgraph.
+This script automates the discovery and visualization of these relationships. It outputs visualizations of groups meeting an optional minimum threshold of nodes (members and individuals) and returns summary statistics of those member/individual networks.
 
-<img src="./docs/Example member network.PNG">
-<img src="./docs/Gephi example 2.PNG">
+<img src="./docs/screenshots/Example member network.PNG">
+<img src="./docs/screenshots/Gephi example 2.PNG">
 
 ## Setup (for an intended audience of non-Python users)
 
@@ -54,18 +54,25 @@ App.py is the entry point. Before running, activate the virtual environment if n
 
 Both the CLI and GUI should be pretty self explanatory. Keep an eye on the terminal when running the GUI- this is where status messages and errors will be displayed.  
 
+<img src="./docs/screenshots/Gui screenshot.PNG">  
+
 ## Managing the output files (important!)  
 The user is responsible for archiving and organizing the output. By default, the program will *not* delete any files in the output folder from the last time it was run, but *will* overwrite any old files with the same name. This will primarily affect the PDFs unless it is run multiple times within the same day, in which case the tables and gephx files will also be overwritten. The easiest way to archive/retain the output is to cut/paste the entire folder somewhere else, or simply rename it. When the program runs it will re-create the output folder if it doesn't exist, so there is no risk to deleting or renaming it.  
 
 If you don't wish to retain any historical output files, it is recommended to delete the output folder before re-running the program. This will prevent old files from accumulating, particularly in the pdf folder.  
 
 ## What to do with the output  
-#### Whats included?
-The output will include:
-* Member subgraphs.xlsx: This is a summary of all the networks of members identified. It contains a name and summaries of attributes, along with a link to the corresponding pdf (see below). Click the link to open the pdf and see the network visualization.
-* Total membership graph. gephx: All membership data saved in a .gephx file. Open with a network analysis program such as Gephi, Cytoscape, etc. Can also be opened in Python/NetworkX.
-* PDFs: For each connected component (subgraph) of the membership base, a pdf is generated which contains a visualization and attribute summary table.
-* individual group.csv: Table containing the individual ID and group the individual is part of.
-* member group.csv: Table containing member number and group a membership is part of 
+
+* Member subgraphs.xlsx: This is a summary of all the networks of members identified within. It contains a name and summaries of attributes, along with a link to the corresponding pdf (see below). Click the link to open the pdf and see the network visualization. This is a useful starting point to understand high level summaries and share relevant visualzations/details with other non-technical users.
+
+<img src="./docs/screenshots/excel summary screenshot.PNG">  
+
+* Total membership graph. gephx: All membership data saved in a .gephx file (not filtered by minimum network size). This file can be opened with a network analysis program such as Gephi or Cytoscape. It can also be opened in Python/NetworkX. Use this file for more advanced analysis, interactive exploration, or for archival purposes.
+ 
+* PDFs: For each connected component (subgraph) of the total membership meeting your minimum size, a pdf is generated which contains a visualization and attribute summary table. This can be combined with the summary excel file for sharing and exploration
+
+* Individual group and member group.csv: These contain tables of with member_nbr/individual_id and a corresponding group id (group ID being the central member/individual with a prefix of 'group-'). Upload these to your datawarehouse if you wish to run queries involving other tables/attributes that aren't' included in the original sql query.
+
+<img src="./docs/screenshots/Individual group example.PNG">  
 
 
