@@ -1,5 +1,4 @@
 # XP2-member-networks
-(Work in progress)
 
 ## Intro
 Visualize networks of individuals and memberships on the XP2 core/ Data Explorer data warehouse using NetworkX.
