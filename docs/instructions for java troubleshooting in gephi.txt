@@ -1,7 +1,7 @@
 1) Find the gephi.conf file. Default location is "C:\Program Files\Gephi-0.9.2\etc\gephi.conf"
 2) Open the file in a text editor.
 3) Find the location of your java installation
-4) On line 11, remove the '#'
+4) On line 11 of gephi.conf, remove the '#'
 5) Insert the path to your java installation
 
 Example of what it may look like (depending on where java is installed and what version you have):
