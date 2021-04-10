@@ -41,10 +41,10 @@ For example, if your sever is called "cool-server" and your database is "cool-da
 MSSQL_server_name = 'cool-server'
 datamart_name = 'cool-datamart'
 ```
-**NOTE:** A dummy sqlite database is included for testing without the need to connect to your datawarehouse. No setup is required to use this dataset unless the location of the sqlite file has been changed. If the location changed, you can set the filepath to the new location in this same file.  Example: `sqlite_location = 'C:\\Users\\Username\\new directory\\demo_data.db'`
+**NOTE:** A dummy sqlite database is included for testing without the need to connect to your data warehouse. No setup is required to use this dataset unless the location of the sqlite file has been changed. If the location changed, you can set the filepath to the new location in this same server_details.py file.  
 
 #### 4. Optional: changing the output folder location and file prefixes  
-By default, when the script runs it will output results to xp2-member-networks/output. If you wish to change this, you can specify a new filepath in output_location.py within the config folder. It should accept relative paths or absolute paths but take care to use 
+By default, when the script runs it will output results to xp2-member-networks/output. If you wish to change the location of the output, you can specify a new filepath in config/output_location.py. It should accept relative paths or absolute paths. 
 
 ## Running the program  
 App.py is the entry point. Before running, activate the virtual environment if necessary. Using terminal or the Anaconda prompt, navigate to ./XP2-member-networks and run `app.py` to run the program with a GUI. To enter the CLI instead, run `app.py cli`.  
