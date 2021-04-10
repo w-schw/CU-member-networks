@@ -143,7 +143,7 @@ job = GraphJob()
 
 # Set up root object
 root = Tk()
-root.title('XP2 Member Network Analyzer')
+root.title('Credit Union Member Network Analyzer')
 root.geometry('400x350')
 db_frame = Frame(root)
 hist_frame = Frame(root)
