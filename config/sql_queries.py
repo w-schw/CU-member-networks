@@ -23,8 +23,7 @@ FROM membershipparticipant_today
 '''
 
 ########################################################
-# MS SQL (Data Explorer) QUERIES
-# Need to add filter for real accounts!
+# MS SQL Queries
 #######################################################
 
 ms_sql_node_individual_query = '''
