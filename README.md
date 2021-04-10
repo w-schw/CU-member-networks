@@ -65,17 +65,24 @@ If you don't wish to retain any historical output files, it is recommended to de
 
 ## What to do with the output  
 
-* Member subgraphs.xlsx: This is a summary of all the networks of members identified within. It contains a name and summaries of attributes, along with a link to the corresponding pdf (see below). Click the link to open the pdf and see the network visualization. This is a useful starting point to understand high level summaries and share relevant visualzations/details with other non-technical users.
+#### Member subgraphs.xlsx  
+This is a summary of all the networks of members identified within. It contains a name and summaries of attributes, along with a link to the corresponding pdf (see below). Click the link to open the pdf and see the network visualization. This is a useful starting point to understand high level summaries and share relevant visualzations/details with other non-technical users.
 
 <img src="./docs/screenshots/Excel summary screenshot.PNG">  
 
-* Total membership graph. gephx: All membership data saved in a .gephx file (not filtered by minimum network size). This file can be opened with a network analysis program such as Gephi or Cytoscape. It can also be opened in Python/NetworkX. Use this file for more advanced analysis, interactive exploration, or for archival purposes.
+#### Total membership graph.gephx
+
+All membership data saved in a .gephx file (not filtered by minimum network size). This file can be opened with a network analysis program such as Gephi or Cytoscape. It can also be opened in Python/NetworkX. Use this file for more advanced analysis, interactive exploration, or for archival purposes. See links to Gephi and Cytoscape below.
  
-* PDFs: For each connected component (subgraph) of the total membership meeting your minimum size, a pdf is generated which contains a visualization and attribute summary table. This can be combined with the summary excel file for sharing and exploration
+#### PDFs
+
+For each connected component (subgraph) of the total membership meeting your minimum size, a pdf is generated which contains a visualization and attribute summary table. This can be combined with the summary excel file for sharing and exploration
 
 <img src="./docs/screenshots/Pdf screenshot.PNG">  
 
-* Individual group and member group.csv: These contain tables of with member_nbr/individual_id and a corresponding group id (group ID being the central member/individual with a prefix of 'group-'). Upload these to your datawarehouse if you wish to generate reports involving other tables/attributes that aren't included in the original sql query.
+#### Individual group and member group.csv
+
+These contain tables of with member_nbr/individual_id and a corresponding group id (group ID being the central member/individual with a prefix of 'group-'). Upload these to your datawarehouse if you wish to generate reports involving other tables/attributes that aren't included in the original sql query.
 
 <img src="./docs/screenshots/Individual group example.PNG">  
 
