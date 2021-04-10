@@ -16,21 +16,20 @@ The following packages are required in addition to the base Python installation:
 
 You have three options for installing: 
 
-1) Manually install these via pip or Anaconda. See:  
+1) **Manually install these via pip or Anaconda** See:  
 Installing packages via conda cli: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html  
 Managing environments in Anaconda: https://docs.anaconda.com/anaconda/navigator/getting-started/#navigator-managing-environments  
 Installing packages via Anaconda GUI: https://docs.anaconda.com/anaconda/navigator/tutorials/manage-packages/
 
-2) Use the environment.yml file to setup a virtual environment containg the base conda installation + required packages  
+2) **Use the environment.yml file to setup a virtual environment** containing the base conda installation + required packages  
 With Anaconda installed, navigate to ./XP2-member-networks via Anaconda prompt and run `conda env create -f environment.yml`  
 See: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 
-3) Use the requirements.txt file to install all at once using pip  
+3) **Use the requirements.txt file to install all at once using pip**  
 Navigate to ./XP2-member-networks and run `pip install -r requirements.txt`  
 
 #### 2. Clone or download this repository  
 Clone this repository using git, or download via the web and unzip (Click the green Code button > click "Download Zip").  
-Before running, activate the virtual environment if necessary.
 
 #### 3. Set up the SQL server connection  
 Before running, the name of your MSSQL server and datamart are required to connect. Windows authentication is the method for authentication (the only method supported at this time).  
@@ -46,8 +45,9 @@ datamart_name = 'cool-datamart'
 By default, when the script runs it will output results to xp2-member-networks/output. If you wish to change this, you can specify a new filepath in output_location.py within the config folder. It should accept relative paths or absolute paths but take care to use 
 
 ## Running the program  
-App.py is the entry point. Using terminal or the Anaconda prompt, navigate to ./XP2-member-networks and run `app.py` to run the program with a GUI. To enter the CLI instead, run `app.py cli`.  
-Both the CLI and GUI should be pretty self explanatory. Please pay attention to the terminal when running the GUI, as status messages and errors will be displayed here.  
+App.py is the entry point. Before running, activate the virtual environment if necessary. Using terminal or the Anaconda prompt, navigate to ./XP2-member-networks and run `app.py` to run the program with a GUI. To enter the CLI instead, run `app.py cli`.  
+
+Both the CLI and GUI should be pretty self explanatory. Keep an eye on the terminal when running the GUI- this is where status messages and errors will be displayed.  
 
 ## Managing the output files (important!)  
 The user is responsible for archiving and organizing the output. By default, the program will *not* delete any files in the output folder from the last time it was run, but *will* overwrite any old files with the same name. This will primarily affect the PDFs unless it is run multiple times within the same day, in which case the tables and gephx files will also be overwritten. The easiest way to archive/retain the output is to cut/paste the entire folder somewhere else, or simply rename it. When the program runs it will re-create the output folder if it doesn't exist, so there is no risk to deleting or renaming it.  
