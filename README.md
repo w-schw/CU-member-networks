@@ -1,4 +1,4 @@
-# CU-member-networks
+# cu-member-networks
 
 Visualize networks of individuals and memberships.
 
@@ -26,11 +26,11 @@ Managing environments in Anaconda: https://docs.anaconda.com/anaconda/navigator/
 Installing packages via Anaconda GUI: https://docs.anaconda.com/anaconda/navigator/tutorials/manage-packages/
 
 2) **Use the environment.yml file to setup a virtual environment** containing the base conda installation + required packages  
-With Anaconda installed, navigate to ./CU-member-networks via Anaconda prompt and run `conda env create -f environment.yml`  
+With Anaconda installed, navigate to ./cu-member-networks via Anaconda prompt and run `conda env create -f environment.yml`  
 See: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 
 3) **Use the requirements.txt file to install all at once using pip**  
-Navigate to ./CU-member-networks and run `pip install -r requirements.txt`  
+Navigate to ./cu-member-networks and run `pip install -r requirements.txt`  
 
 #### 2. Clone or download this repository  
 Clone this repository using git, or download via the web and unzip (Click the green Code button > click "Download Zip").  
@@ -38,7 +38,7 @@ Clone this repository using git, or download via the web and unzip (Click the gr
 #### 3. Set up the SQL server connection  
 Before running, the name of your MSSQL server and datamart are required to connect. Windows authentication is the method for authentication (the only method supported at this time).  
 
-Server details must be saved in the server_details.py file, located in CU-member-networks/config. Open this file in a text editor of your choice, and replace the 'xxxx' with relevant names and save.  
+Server details must be saved in the server_details.py file, located in cu-member-networks/config. Open this file in a text editor of your choice, and replace the 'xxxx' with relevant names and save.  
 
 For example, if your sever is called "cool-server" and your database is "cool-datamart", the server_details.py should contain:
 ```
@@ -48,12 +48,12 @@ datamart_name = 'cool-datamart'
 **NOTE:** A dummy sqlite database is included for testing without the need to connect to your data warehouse. No setup is required to use this dataset unless the location of the sqlite file has been changed. If the location changed, you can set the filepath to the new location in this same server_details.py file.  
 
 #### 4. Optional: changing the output folder location and file prefixes  
-By default, when the script runs it will output results to CU-member-networks/output. If you wish to change the location of the output, you can specify a new filepath in config/output_location.py. It should accept relative paths or absolute paths. 
+By default, when the script runs it will output results to cu-member-networks/output. If you wish to change the location of the output, you can specify a new filepath in config/output_location.py. It should accept relative paths or absolute paths. 
 
 ## Running the program  
 **NOTE**: If you prefer to explore in a jupyter notebook, see Member network development.ipynb in the docs folder. This should run without the need to load any of the other modules included as long as the dummy sqlite database is available.
 
-App.py is the entry point. Before running, activate the virtual environment if necessary. Using terminal or the Anaconda prompt, navigate to ./CU-member-networks and run `app.py` to run the program with a GUI. To enter the CLI instead, run `app.py cli`.  
+App.py is the entry point. Before running, activate the virtual environment if necessary. Using terminal or the Anaconda prompt, navigate to ./cu-member-networks and run `app.py` to run the program with a GUI. To enter the CLI instead, run `app.py cli`.  
 
 Both the CLI and GUI should be pretty self explanatory. Keep an eye on the terminal when running the GUI- this is where status messages and errors will be displayed.  
 
@@ -92,5 +92,5 @@ Gephi: https://gephi.org/
 Cytoscape: https://cytoscape.org/  
 NetworkX: https://networkx.org/  
 Gephi tutorials: https://gephi.org/users/  
-If you have problems with Java after Gephi installation: [click here for troubleshooting](https://raw.githubusercontent.com/w-schw/CU-member-networks/main/docs/instructions%20for%20java%20troubleshooting%20in%20gephi.txt)
+If you have problems with Java after Gephi installation: [click here for troubleshooting](https://raw.githubusercontent.com/w-schw/cu-member-networks/main/docs/instructions%20for%20java%20troubleshooting%20in%20gephi.txt)
 
