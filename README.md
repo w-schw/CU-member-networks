@@ -95,3 +95,5 @@ NetworkX: https://networkx.org/
 Gephi tutorials: https://gephi.org/users/  
 If you have problems with Java after Gephi installation: [click here for troubleshooting](https://raw.githubusercontent.com/w-schw/cu-member-networks/main/docs/instructions%20for%20java%20troubleshooting%20in%20gephi.txt)
 
+## License  
+Other licenses may apply to code involving third party packages. 
